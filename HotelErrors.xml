@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (1) Wrong root name on purpose -->
+<Hotel>
+  <!-- still looks like a list, but root is intentionally wrong -->
+  <Hotel id="h1" Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>
+      <Number>11</Number><Street>E 7th St</Street><City>Tempe</City><State>AZ</State><Zip>85281</Zip><NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- (2) Missing required attribute 'id' on purpose -->
+  <Hotel>
+    <Name>Courtyard by Marriott Tempe</Name>
+    <!-- (3) Missing Phone element(s) on purpose -->
+    <Address>
+      <Number>601</Number><Street>S Ash Ave</Street><City>Tempe</City><State>AZ</State><Zip>85281</Zip><NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- (5) Two Name elements on purpose + (4) Address has no closing tag -->
+  <Hotel id="h3" Rating="4.5">
+    <Name>Hyatt Place Tempe</Name>
+    <Name>Duplicate Name</Name>
+    <Phone>480-207-1577</Phone>
+    <Address>
+      <Number>2100</Number><Street>S Rio Salado Pkwy</Street><City>Tempe</City><State>AZ</State><Zip>85281</Zip><NearestAirport>Sky Harbor</NearestAirport>
+    <!-- MISSING </Address> intentionally -->
+  </Hotel>
+</Hotel>
